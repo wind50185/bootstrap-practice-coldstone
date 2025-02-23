@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>首頁｜COLD STONE - 冰淇淋專家</title>
+        <!-- <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+            crossorigin="anonymous"
+        /> -->
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
+    </head>
+    <body>
+        <!-- header start -->
+        <header class="border-top border-4 border-primary shadow-sm">
+            <!-- navbar start -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html"
+                        ><img
+                            class="p-1 ms-lg-3"
+                            src="./images/header_logo.png"
+                            alt=""
+                            height="60"
+                    /></a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#primaryNavbar"
+                        aria-controls="primaryNavbar"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="primaryNavbar">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html"
+                                    >關於我們</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./product-list.html"
+                                    >產品列表</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./store.html"
+                                    >門市店鋪</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./faq.html"
+                                    >常見問題</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html"
+                                    >聯絡我們</a
+                                >
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="navbarDropdown"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    投資人專區
+                                </a>
+                                <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="navbarDropdown"
+                                >
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >重大訊息</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >海外治理</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                            <button
+                                class="btn btn-link text-primary p-0 ms-3"
+                                type="button"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample"
+                                aria-controls="offcanvasExample"
+                            >
+                                <i class="bi bi-bag fs-3"></i>
+                            </button>
+
+                            <button
+                                type="button"
+                                class="btn btn-link text-primary p-0 ms-2"
+                                data-bs-toggle="modal"
+                                data-bs-target="#logInModal"
+                            >
+                                <i class="bi bi-person-circle fs-3"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- navbar end -->
+        </header>
+        <!-- header end -->
+
+        <!-- 輪播 start -->
+        <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+        >
+            <div class="carousel-indicators">
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                ></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                        src="./images/bn01.jpg"
+                        class="d-block w-100"
+                        alt="輪播 banner - 好吃的冰淇淋 01"
+                    />
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="./images/bn02.jpg"
+                        class="d-block w-100"
+                        alt="輪播 banner - 好吃的冰淇淋 02"
+                    />
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="./images/bn03.jpg"
+                        class="d-block w-100"
+                        alt="輪播 banner - 好吃的冰淇淋 03"
+                    />
+                </div>
+            </div>
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+            >
+                <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+            >
+                <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- 輪播 end -->
+
+        <!-- container：固定寬度的容器 -->
+
+        <!-- 兩欄排版 start -->
+        <div class="container py-3 my-3">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="mb-4 fs-1 fw-bold">冰淇淋專家 COLD STONE</h2>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="ratio ratio-16x9 mb-2">
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/MVkCm1GmtBw?si=qqrfJUVhhIldznHo"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <p class="fw-bold fs-4">
+                        Say hello and welcome back to two must-have treats this spring!👋
+                    </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="ratio ratio-16x9 mb-2">
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/hXGUN39EX9k?si=naMsR2Sy4uWh_GGq"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <p class="fw-bold fs-4">
+                        Our Falling in Chocolate™ Signature Creation™ is back!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- 兩欄排版 end -->
+
+        <!-- 三欄 start -->
+        <div class="bg-primary py-3 my-3">
+            <div class="container">
+                <div class="row text-center text-white">
+                    <div class="col-12">
+                        <h2 class="my-4 fs-1 fw-bold">
+                            <i class="bi bi-cake"></i> 商品情報
+                            <i class="bi bi-cake"></i>
+                        </h2>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center px-3">
+                            <div class="position-relative">
+                                <div
+                                    class="position-absolute start-0 top-0 bg-primary p-2 m-3"
+                                >
+                                    NEW
+                                </div>
+                                <img
+                                    src="./images/pl01.jpg"
+                                    alt=""
+                                    class="w-100 m-0"
+                                />
+                            </div>
+                            <p class="mt-3">
+                                <a
+                                    class="text-white text-center fs-4 text-decoration-none"
+                                    href=""
+                                    >冰淇淋</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center px-3">
+                            <div class="position-relative">
+                                <div
+                                    class="position-absolute start-0 top-0 bg-secondary p-2 m-3"
+                                >
+                                    HOT
+                                </div>
+                                <img
+                                    src="./images/pl02.jpg"
+                                    alt=""
+                                    class="w-100 m-0"
+                                />
+                            </div>
+
+                            <p class="mt-3">
+                                <a
+                                    class="text-white text-center fs-4 text-decoration-none"
+                                    href=""
+                                    >蛋糕</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center px-3">
+                            <img
+                                src="./images/pl03.jpg"
+                                alt=""
+                                class="w-100 m-0"
+                            />
+                            <p class="mt-3">
+                                <a
+                                    class="text-white text-center fs-4 text-decoration-none"
+                                    href=""
+                                    >飲料</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 三欄 end -->
+
+        <!-- 兩欄 - 店鋪情報 start -->
+        <!-- .container>.row>.col-lg-6*2>.row>.col-6*2{$} -->
+        <div class="container py-3 my-3">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="row g-0">
+                        <div class="col-6">
+                            <img
+                                class="w-100"
+                                src="./images/store.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="col-6 bg-primary text-white fw-bold d-flex align-items-center justify-content-center text-center"
+                        >
+                            <div>
+                                <p class="mb-0 fs-1">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </p>
+                                <h3 class="fs-1 fw-bold">STORE</h3>
+                                <p>找尋門市據點</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="row g-0">
+                        <div class="col-6">
+                            <img
+                                class="w-100"
+                                src="./images/recruit.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="col-6 bg-secondary text-white fw-bold d-flex align-items-center justify-content-center text-center"
+                        >
+                            <div>
+                                <p class="mb-0 fs-1">
+                                    <i class="bi bi-people-fill"></i>
+                                </p>
+                                <h3 class="fs-1 fw-bold">RECRUIT</h3>
+                                <p>成為我們的歡樂伙伴</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 兩欄 - 店鋪情報 end -->
+
+        <!-- 四欄 start -->
+        <div class="container py-3 my-3">
+            <div class="row p-3 text-center">
+                <div class="col-12">
+                    <h2 class="my-4 fs-1 fw-bold">最新消息</h2>
+                </div>
+                <div class="col-md-3 mb-2 fw-bold">
+                    <div class="m-3">
+                        <img
+                            src="./images/news01.png"
+                            alt=""
+                            class="w-100 rounded-circle mb-3"
+                        />
+                        <p class="fs-5">
+                            酷聖石首次聯名「阿華田巧克力麥芽冰銅燒」7-ELEVEN
+                            10/28搶先推出！
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-2 fw-bold">
+                    <div class="m-3">
+                        <img
+                            src="./images/news02.png"
+                            alt=""
+                            class="w-100 rounded-circle mb-3"
+                        />
+                        <p class="fs-5">
+                            首次聯名三麗鷗人氣巨星「酷黑Kuromi冰心捲」
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-2 fw-bold">
+                    <div class="m-3">
+                        <img
+                            src="./images/news03.png"
+                            alt=""
+                            class="w-100 rounded-circle mb-3"
+                        />
+                        <p class="fs-5">
+                            首推鹿兒島焙茶冰淇淋「焙香蜜QQ」，3款「極濃黑牛奶冰淇淋」強勢回歸！
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-2 fw-bold">
+                    <div class="m-3">
+                        <img
+                            src="./images/news04.png"
+                            alt=""
+                            class="w-100 rounded-circle mb-3"
+                        />
+                        <p class="fs-5">【公告】暫停OPEN錢包交易服務</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 四欄 end -->
+
+        <!-- 六欄 start -->
+
+        <div class="container py-3 my-3">
+            <div class="row d-flex text-center">
+                <div class="col-12">
+                    <h2 class="my-4 fs-1 fw-bold">Follow Us</h2>
+                </div>
+                <div class="col-6 col-md-2">
+                    <p class="fs-1 mb-0 text-primary">
+                        <i class="bi bi-nintendo-switch"></i>
+                    </p>
+                    <p>item1</p>
+                </div>
+                <div class="col-6 col-md-2">
+                    <p class="fs-1 mb-0 text-primary">
+                        <i class="bi bi-nvidia"></i>
+                    </p>
+                    <p>item2</p>
+                </div>
+                <div class="col-6 col-md-2">
+                    <p class="fs-1 mb-0 text-primary">
+                        <i class="bi bi-messenger"></i>
+                    </p>
+                    <p>item3</p>
+                </div>
+                <div class="col-6 col-md-2">
+                    <p class="fs-1 mb-0 text-primary">
+                        <i class="bi bi-line"></i>
+                    </p>
+                    <p>item4</p>
+                </div>
+                <div class="col-6 col-md-2">
+                    <p class="fs-1 mb-0 text-primary">
+                        <i class="bi bi-facebook"></i>
+                    </p>
+                    <p>item5</p>
+                </div>
+                <div class="col-6 col-md-2">
+                    <p class="fs-1 mb-0 text-primary">
+                        <i class="bi bi-cart4"></i>
+                    </p>
+                    <p>item6</p>
+                </div>
+            </div>
+        </div>
+        <!-- 六欄 end -->
+
+        <!-- Modal start -->
+        <div
+            class="modal fade"
+            id="logInModal"
+            tabindex="-1"
+            aria-labelledby="logInModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="logInModalLabel">
+                            登入 COLD STONE 會員
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <form
+                            action=""
+                            id="LoginForm"
+                            autocomplete="off"
+                            class="needs-validation"
+                            novalidate
+                        >
+                            <div class="form-group mb-3">
+                                <label class="mb-1" for="account">帳號</label>
+                                <input
+                                    class="form-control"
+                                    type="email"
+                                    id="account"
+                                    name="account"
+                                    placeholder="請輸入電子郵件"
+                                    required
+                                />
+                                <div class="invalid-feedback">
+                                    格式錯誤，請重新輸入
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="mb-1" for="password">密碼</label>
+                                <input
+                                    class="form-control"
+                                    type="password"
+                                    id="password"
+                                    name="password"
+                                    placeholder="請輸入 6 - 8 碼英數字"
+                                    required
+                                />
+                                <div class="invalid-feedback">
+                                    格式錯誤，請重新輸入
+                                </div>
+                            </div>
+                            <div class="d-grid my-2">
+                                <input
+                                    class="btn btn-primary"
+                                    type="submit"
+                                    value="登入"
+                                />
+                            </div>
+                            <p class="text-end">
+                                <a class="text-secondary" href="">忘記密碼？</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal end -->
+
+        <footer class="text-center bg-primary py-5 mt-2 text-white">
+            <p class="m-0">
+                COPYRIGHT @ COLD STONE CREAMERY ALL RIGHTS RESERVED
+            </p>
+        </footer>
+
+        <!-- offcanvas start -->
+        <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+        >
+            <div class="offcanvas-header">
+                <h5
+                    class="offcanvas-title text-primary fw-bold"
+                    id="offcanvasExampleLabel"
+                >
+                    購物車
+                </h5>
+                <button
+                    type="button"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                ></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <h4>您的購物車是空的</h4>
+                    <p class="text-secondary">共 0 件商品</p>
+                </div>
+                <a href="#" class="btn btn-primary">前往購物車</a>
+            </div>
+        </div>
+
+        <!-- offcanvas end -->
+
+        <!-- pagetop start -->
+
+        <a
+            class="position-fixed bottom-0 end-0 bg-secondary bg-opacity-75 px-3 py-2 m-3 text-white text-decoration-none rounded"
+            href="#"
+        >
+            <i class="bi bi-chevron-up fs-3"></i>
+        </a>
+
+        <!-- pagetop end -->
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./js/validation.js"></script>
+    </body>
+</html>
