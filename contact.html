@@ -1,443 +1,393 @@
 <!DOCTYPE html>
-<html lang="zh-hant-TW">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>聯絡我們｜COLD STONE - 冰淇淋專家</title>
-        <!-- <link
+<html lang="zh-hant-TW" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>聯絡我們｜COLD STONE - 冰淇淋專家</title>
+    <!-- <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
             crossorigin="anonymous"
         /> -->
-        <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
 
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-        />
-    </head>
-    <body>
-        <!-- header start -->
-        <header class="border-top border-4 border-primary shadow-sm">
-            <!-- navbar start -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="./index.html"
-                        ><img
-                            class="p-1 ms-lg-3"
-                            src="./images/header_logo.png"
-                            alt=""
-                            height="60"
-                    /></a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#primaryNavbar"
-                        aria-controls="primaryNavbar"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="primaryNavbar">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="./about.html"
-                                    >關於我們</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./product-list.html"
-                                    >產品列表</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./store.html"
-                                    >門市店鋪</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./faq.html"
-                                    >常見問題</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contact.html"
-                                    >聯絡我們</a
-                                >
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a
-                                    class="nav-link dropdown-toggle"
-                                    href="#"
-                                    id="navbarDropdown"
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                >
-                                    投資人專區
-                                </a>
-                                <ul
-                                    class="dropdown-menu"
-                                    aria-labelledby="navbarDropdown"
-                                >
-                                    <li>
-                                        <a class="dropdown-item" href="#"
-                                            >重大訊息</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#"
-                                            >海外治理</a
-                                        >
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div class="d-flex">
-                            <button
-                                class="btn btn-link text-primary p-0 ms-3"
-                                type="button"
-                                data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasExample"
-                                aria-controls="offcanvasExample"
-                            >
-                                <i class="bi bi-bag fs-3"></i>
-                            </button>
-
-                            <button
-                                type="button"
-                                class="btn btn-link text-primary p-0 ms-2"
-                                data-bs-toggle="modal"
-                                data-bs-target="#logInModal"
-                            >
-                                <i class="bi bi-person-circle fs-3"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
-            <!-- navbar end -->
-        </header>
-        <nav aria-label="breadcrumb" class="m-3">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
-                <li class="breadcrumb-item active" aria-current="page">
-                    聯絡我們
-                </li>
-            </ol>
-        </nav>
-        <!-- header end -->
-        <!-- content start -->
-        <!-- .container>.row>.col-md-8.offset-md-2 -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    <!-- form start -->
-                    <form
-                        action=""
-                        id="ContactForm"
-                        autocomplete="off"
-                        class="needs-validation"
-                        novalidate
-                    >
-                        <!-- 目的欄位 start -->
-                        <div class="form-group mb-3">
-                            <label class="mb-1" for="purpose">聯絡目的</label>
-                            <select
-                                class="form-select"
-                                name="purpose"
-                                id="purpose"
-                                required
-                            >
-                                <option value="" disabled selected>
-                                    ===== 請選擇 =====
-                                </option>
-                                <option value="1">客服專區</option>
-                                <option value="2">加盟專區</option>
-                                <option value="3">海外代理</option>
-                                <option value="4">異業合作</option>
-                                <option value="5">企業採購</option>
-                                <option value="6">聯名商品</option>
-                            </select>
-                            <div class="invalid-feedback">請選擇項目</div>
-                        </div>
-
-                        <!-- 目的欄位 end -->
-
-                        <!-- 姓名欄位 start -->
-                        <div class="form-group mb-3">
-                            <label class="mb-1" for="contactName">姓名</label>
-                            <input
-                                class="form-control"
-                                type="text"
-                                id="contactName"
-                                name="contactName"
-                                placeholder="請輸入姓名"
-                                required
-                            />
-                            <div class="invalid-feedback">
-                                格式錯誤，請重新輸入
-                            </div>
-                        </div>
-                        <!-- 姓名欄位 end -->
-
-                        <!-- 電話欄位 start -->
-
-                        <div class="form-group mb-3">
-                            <label class="mb-1" for="phone">聯絡電話</label>
-                            <input
-                                class="form-control"
-                                type="tel"
-                                id="phone"
-                                name="phone"
-                                placeholder="請輸入聯絡電話，格式：0900-000-000"
-                                pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
-                                required
-                            />
-                            <div class="invalid-feedback">
-                                格式錯誤，請重新輸入
-                            </div>
-                        </div>
-                        <!-- 電話欄位 end -->
-
-                        <!-- 信箱欄位 start -->
-                        <div class="form-group mb-3">
-                            <label class="mb-1" for="email">電子信箱</label>
-                            <input
-                                class="form-control"
-                                type="email"
-                                id="email"
-                                name="email"
-                                placeholder="請輸入電子信箱"
-                                required
-                            />
-                            <div class="invalid-feedback">
-                                格式錯誤，請重新輸入
-                            </div>
-                        </div>
-                        <!-- 信箱欄位 end -->
-
-                        <!-- 門市欄位 start -->
-
-                        <div class="form-group mb-3">
-                            <label class="mb-1" for="store">消費門市</label>
-                            <select
-                                class="form-select"
-                                name="store"
-                                id="store"
-                                required
-                            >
-                                <option value="" disabled selected>
-                                    ===== 請選擇 =====
-                                </option>
-                                <option value="1">台北和平店</option>
-                                <option value="2">雙和醫院店</option>
-                                <option value="3">竹東長春店</option>
-                                <option value="4">什麼什麼店</option>
-                                <option value="5">還有一家店</option>
-                            </select>
-                            <div class="invalid-feedback">請選擇項目</div>
-                        </div>
-
-                        <!-- 門市欄位 end -->
-
-                        <!-- 消費時間欄位 start -->
-                        <div class="form-group mb-3">
-                            <label class="mb-1" for="time">消費時間</label>
-                            <input
-                                class="form-control"
-                                type="datetime-local"
-                                id="time"
-                                name="time"
-                                placeholder="請選擇消費時間"
-                                required
-                            />
-                            <div class="invalid-feedback">
-                                格式錯誤，請重新輸入
-                            </div>
-                        </div>
-                        <!-- 消費時間欄位 end -->
-
-                        <!-- 主旨欄位 start -->
-
-                        <div class="form-group mb-3">
-                            <label class="mb-1" for="subject">主旨</label>
-                            <input
-                                class="form-control"
-                                type="text"
-                                id="subject"
-                                name="subject"
-                                placeholder="請輸入主旨"
-                                required
-                            />
-                            <div class="invalid-feedback">
-                                格式錯誤，請重新輸入
-                            </div>
-                        </div>
-
-                        <!-- 主旨欄位 end -->
-
-                        <!-- 內容欄位 start -->
-                        <div class="form-group mb-3">
-                            <label class="mb-1" for="comment">聯絡內容</label>
-                            <textarea
-                                class="form-control"
-                                name="comment"
-                                id="comment"
-                                rows="5"
-                                required
-                            ></textarea>
-                            <div class="invalid-feedback">請輸入聯絡內容</div>
-                        </div>
-                        <!-- 內容欄位 end -->
-
-                        <!-- 送出按鈕 start -->
-                        <div class="d-grid my-2">
-                            <input
-                                class="btn btn-primary"
-                                type="submit"
-                                value="送出"
-                            />
-                        </div>
-                        <!-- 送出按鈕 end -->
-                    </form>
-                    <!-- form end -->
-                </div>
-            </div>
-        </div>
-
-        <!-- content end -->
-        <!-- Modal start -->
-        <div
-            class="modal fade"
-            id="logInModal"
-            tabindex="-1"
-            aria-labelledby="logInModalLabel"
-            aria-hidden="true"
-        >
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="logInModalLabel">
-                            登入 COLD STONE 會員
-                        </h5>
-                        <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                        ></button>
-                    </div>
-                    <div class="modal-body">
-                        <form
-                            action=""
-                            id="LoginForm"
-                            autocomplete="off"
-                            class="needs-validation"
-                            novalidate
-                        >
-                            <div class="form-group mb-3">
-                                <label class="mb-1" for="account">帳號</label>
-                                <input
-                                    class="form-control"
-                                    type="email"
-                                    id="account"
-                                    name="account"
-                                    placeholder="請輸入電子郵件"
-                                    required
-                                />
-                                <div class="invalid-feedback">
-                                    格式錯誤，請重新輸入
-                                </div>
-                            </div>
-                            <div class="form-group mb-3">
-                                <label class="mb-1" for="password">密碼</label>
-                                <input
-                                    class="form-control"
-                                    type="password"
-                                    id="password"
-                                    name="password"
-                                    placeholder="請輸入 6 - 8 碼英數字"
-                                    required
-                                />
-                                <div class="invalid-feedback">
-                                    格式錯誤，請重新輸入
-                                </div>
-                            </div>
-                            <div class="d-grid my-2">
-                                <input
-                                    class="btn btn-primary"
-                                    type="submit"
-                                    value="登入"
-                                />
-                            </div>
-                            <p class="text-end">
-                                <a class="text-secondary" href="">忘記密碼？</a>
-                            </p>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Modal end -->
-
-        <footer class="text-center bg-primary py-5 mt-2 text-white">
-            <p class="m-0">
-                COPYRIGHT @ COLD STONE CREAMERY ALL RIGHTS RESERVED
-            </p>
-        </footer>
-
-        <!-- offcanvas start -->
-        <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel"
-        >
-            <div class="offcanvas-header">
-                <h5
-                    class="offcanvas-title text-primary fw-bold"
-                    id="offcanvasExampleLabel"
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body class="h-100 d-flex flex-column">
+    <!-- header start -->
+    <header class="border-top border-4 border-primary shadow-sm">
+      <!-- navbar start -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"
+            ><img
+              class="p-1 ms-lg-3"
+              src="./images/header_logo.png"
+              alt=""
+              height="60"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#primaryNavbar"
+            aria-controls="primaryNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="primaryNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">關於我們</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./product-list.html">產品列表</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./store.html">門市店鋪</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./faq.html">常見問題</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">聯絡我們</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
-                    購物車
-                </h5>
-                <button
-                    type="button"
-                    class="btn-close text-reset"
-                    data-bs-dismiss="offcanvas"
-                    aria-label="Close"
-                ></button>
+                  投資人專區
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">重大訊息</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">海外治理</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <button
+                class="btn btn-link text-primary p-0 ms-3"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample"
+              >
+                <i class="bi bi-bag fs-3"></i>
+              </button>
+
+              <button
+                type="button"
+                class="btn btn-link text-primary p-0 ms-2"
+                data-bs-toggle="modal"
+                data-bs-target="#logInModal"
+              >
+                <i class="bi bi-person-circle fs-3"></i>
+              </button>
             </div>
-            <div class="offcanvas-body">
-                <div>
-                    <h4>您的購物車是空的</h4>
-                    <p class="text-secondary">共 0 件商品</p>
-                </div>
-                <a href="#" class="btn btn-primary">前往購物車</a>
-            </div>
+          </div>
         </div>
+      </nav>
 
-        <!-- offcanvas end -->
+      <!-- navbar end -->
+    </header>
+    <nav aria-label="breadcrumb" class="m-3">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
+        <li class="breadcrumb-item active" aria-current="page">聯絡我們</li>
+      </ol>
+    </nav>
+    <!-- header end -->
+    <!-- content start -->
+    <main class="flex-shrink-0">
+      <!-- .container>.row>.col-md-8.offset-md-2 -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <!-- form start -->
+            <form
+              action=""
+              id="ContactForm"
+              autocomplete="off"
+              class="needs-validation"
+              novalidate
+            >
+              <!-- 目的欄位 start -->
+              <div class="form-group mb-3">
+                <label class="mb-1" for="purpose">聯絡目的</label>
+                <select
+                  class="form-select"
+                  name="purpose"
+                  id="purpose"
+                  required
+                >
+                  <option value="" disabled selected>===== 請選擇 =====</option>
+                  <option value="1">客服專區</option>
+                  <option value="2">加盟專區</option>
+                  <option value="3">海外代理</option>
+                  <option value="4">異業合作</option>
+                  <option value="5">企業採購</option>
+                  <option value="6">聯名商品</option>
+                </select>
+                <div class="invalid-feedback">請選擇項目</div>
+              </div>
 
-        <!-- pagetop start -->
+              <!-- 目的欄位 end -->
 
-        <a
-            class="position-fixed bottom-0 end-0 bg-secondary bg-opacity-75 px-3 py-2 m-3 text-white text-decoration-none rounded"
-            href="#"
+              <!-- 姓名欄位 start -->
+              <div class="form-group mb-3">
+                <label class="mb-1" for="contactName">姓名</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="contactName"
+                  name="contactName"
+                  placeholder="請輸入姓名"
+                  required
+                />
+                <div class="invalid-feedback">格式錯誤，請重新輸入</div>
+              </div>
+              <!-- 姓名欄位 end -->
+
+              <!-- 電話欄位 start -->
+
+              <div class="form-group mb-3">
+                <label class="mb-1" for="phone">聯絡電話</label>
+                <input
+                  class="form-control"
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="請輸入聯絡電話，格式：0900-000-000"
+                  pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+                  required
+                />
+                <div class="invalid-feedback">格式錯誤，請重新輸入</div>
+              </div>
+              <!-- 電話欄位 end -->
+
+              <!-- 信箱欄位 start -->
+              <div class="form-group mb-3">
+                <label class="mb-1" for="email">電子信箱</label>
+                <input
+                  class="form-control"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="請輸入電子信箱"
+                  required
+                />
+                <div class="invalid-feedback">格式錯誤，請重新輸入</div>
+              </div>
+              <!-- 信箱欄位 end -->
+
+              <!-- 門市欄位 start -->
+
+              <div class="form-group mb-3">
+                <label class="mb-1" for="store">消費門市</label>
+                <select class="form-select" name="store" id="store" required>
+                  <option value="" disabled selected>===== 請選擇 =====</option>
+                  <option value="1">台北和平店</option>
+                  <option value="2">雙和醫院店</option>
+                  <option value="3">竹東長春店</option>
+                  <option value="4">什麼什麼店</option>
+                  <option value="5">還有一家店</option>
+                </select>
+                <div class="invalid-feedback">請選擇項目</div>
+              </div>
+
+              <!-- 門市欄位 end -->
+
+              <!-- 消費時間欄位 start -->
+              <div class="form-group mb-3">
+                <label class="mb-1" for="time">消費時間</label>
+                <input
+                  class="form-control"
+                  type="datetime-local"
+                  id="time"
+                  name="time"
+                  placeholder="請選擇消費時間"
+                  required
+                />
+                <div class="invalid-feedback">格式錯誤，請重新輸入</div>
+              </div>
+              <!-- 消費時間欄位 end -->
+
+              <!-- 主旨欄位 start -->
+
+              <div class="form-group mb-3">
+                <label class="mb-1" for="subject">主旨</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="請輸入主旨"
+                  required
+                />
+                <div class="invalid-feedback">格式錯誤，請重新輸入</div>
+              </div>
+
+              <!-- 主旨欄位 end -->
+
+              <!-- 內容欄位 start -->
+              <div class="form-group mb-3">
+                <label class="mb-1" for="comment">聯絡內容</label>
+                <textarea
+                  class="form-control"
+                  name="comment"
+                  id="comment"
+                  rows="5"
+                  required
+                ></textarea>
+                <div class="invalid-feedback">請輸入聯絡內容</div>
+              </div>
+              <!-- 內容欄位 end -->
+
+              <!-- 送出按鈕 start -->
+              <div class="d-grid my-2">
+                <input class="btn btn-primary" type="submit" value="送出" />
+              </div>
+              <!-- 送出按鈕 end -->
+            </form>
+            <!-- form end -->
+          </div>
+        </div>
+      </div>
+
+      <!-- content end -->
+      <!-- Modal start -->
+      <div
+        class="modal fade"
+        id="logInModal"
+        tabindex="-1"
+        aria-labelledby="logInModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="logInModalLabel">
+                登入 COLD STONE 會員
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form
+                action=""
+                id="LoginForm"
+                autocomplete="off"
+                class="needs-validation"
+                novalidate
+              >
+                <div class="form-group mb-3">
+                  <label class="mb-1" for="account">帳號</label>
+                  <input
+                    class="form-control"
+                    type="email"
+                    id="account"
+                    name="account"
+                    placeholder="請輸入電子郵件"
+                    required
+                  />
+                  <div class="invalid-feedback">格式錯誤，請重新輸入</div>
+                </div>
+                <div class="form-group mb-3">
+                  <label class="mb-1" for="password">密碼</label>
+                  <input
+                    class="form-control"
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="請輸入 6 - 8 碼英數字"
+                    required
+                  />
+                  <div class="invalid-feedback">格式錯誤，請重新輸入</div>
+                </div>
+                <div class="d-grid my-2">
+                  <input class="btn btn-primary" type="submit" value="登入" />
+                </div>
+                <p class="text-end">
+                  <a class="text-secondary" href="">忘記密碼？</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal end -->
+    </main>
+
+    <footer class="text-center bg-primary py-5 mt-auto text-white">
+      <p class="m-0">COPYRIGHT @ COLD STONE CREAMERY ALL RIGHTS RESERVED</p>
+    </footer>
+
+    <!-- offcanvas start -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5
+          class="offcanvas-title text-primary fw-bold"
+          id="offcanvasExampleLabel"
         >
-            <i class="bi bi-chevron-up fs-3"></i>
-        </a>
+          購物車
+        </h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <h4>您的購物車是空的</h4>
+          <p class="text-secondary">共 0 件商品</p>
+        </div>
+        <a href="#" class="btn btn-primary">前往購物車</a>
+      </div>
+    </div>
 
-        <!-- pagetop end -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-            crossorigin="anonymous"
-        ></script>
-        <script src="./js/validation.js"></script>
-    </body>
+    <!-- offcanvas end -->
+
+    <!-- pagetop start -->
+
+    <a
+      class="position-fixed bottom-0 end-0 bg-secondary bg-opacity-75 px-3 py-2 m-3 text-white text-decoration-none rounded"
+      href="#"
+    >
+      <i class="bi bi-chevron-up fs-3"></i>
+    </a>
+
+    <!-- pagetop end -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/validation.js"></script>
+  </body>
 </html>
